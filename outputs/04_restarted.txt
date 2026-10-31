@@ -1,0 +1,8 @@
+== zoo1, myid: 1
+
+Mode: follower
+== zoo2, myid: 2
+Mode: follower
+== zoo3, myid: 3
+Mode: leader
+

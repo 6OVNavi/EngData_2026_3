@@ -1,0 +1,53 @@
+services:
+  zoo1:
+    image: zookeeper:3.9.6
+    container_name: zoo1
+    environment:
+      ZOO_MY_ID: 1
+    volumes:
+      - ./zoo.cfg:/conf/zoo.cfg
+    ports:
+      - "2181:2181"
+  zoo2:
+    image: zookeeper:3.9.6
+    container_name: zoo2
+    environment:
+      ZOO_MY_ID: 2
+    volumes:
+      - ./zoo.cfg:/conf/zoo.cfg
+    ports:
+      - "2182:2181"
+  zoo3:
+    image: zookeeper:3.9.6
+    container_name: zoo3
+    environment:
+      ZOO_MY_ID: 3
+    volumes:
+      - ./zoo.cfg:/conf/zoo.cfg
+    ports:
+      - "2183:2181"
+  coord1:
+    build: .
+    container_name: coord1
+    profiles: ["coord"]
+    environment:
+      NAME: c1
+      RUN: ${RUN:-run1}
+      FENCING: ${FENCING:-0}
+    volumes:
+      - ./logs:/app/logs
+  coord2:
+    build: .
+    container_name: coord2
+    profiles: ["coord"]
+    environment:
+      NAME: c2
+      RUN: ${RUN:-run1}
+      FENCING: ${FENCING:-0}
+    volumes:
+      - ./logs:/app/logs
+
+networks:
+  default:
+    name: lab
+    external: true

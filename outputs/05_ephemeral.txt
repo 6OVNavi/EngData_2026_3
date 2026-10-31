@@ -1,0 +1,8 @@
+
+2026-10-31 14:10:58,252 [myid:zoo2:2181] - INFO  [main-SendThread(zoo2:2181):o.a.z.ClientCnxn$SendThread@1172] - SASL config status: Will not attempt to authenticate using SASL (unknown error)
+[demo, zookeeper]
+
+
+2026-10-31 14:11:33,457 [myid:zoo2:2181] - INFO  [main-SendThread(zoo2:2181):o.a.z.ClientCnxn$SendThread@1172] - SASL config status: Will not attempt to authenticate using SASL (unknown error)
+[zookeeper]
+

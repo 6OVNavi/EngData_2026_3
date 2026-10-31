@@ -1,0 +1,16 @@
+
+logs\run1_c1.log:2:14:13:01.738 [c1] стал лидером, эпоха 1
+logs\run1_c1.log:106:14:14:58.466 [c1] расчёт готов: строк 229388, вакансий варианта 3704, разных пар 13049, всего вхождений 47503
+logs\run1_c1.log:107:14:14:58.739 [c1] записал результат hw4/run1/pairs_c1.csv
+logs\run1_c1.log:108:14:14:58.743 [c1] указатель: {"result": "hw4/run1/pairs_c1.csv", "by": "c1", "epoch": 1}, версия 2
+logs\run1_c2.log:2:14:13:29.693 [c2] стал лидером, эпоха 2
+logs\run1_c2.log:3:14:13:29.797 [c2] продолжаю с чекпоинта: байт 251659318, строк 68588, записал c1
+logs\run1_c2.log:76:14:14:17.835 [c2] расчёт готов: строк 229388, вакансий варианта 3704, разных пар 13049, всего вхождений 47503
+logs\run1_c2.log:77:14:14:18.094 [c2] записал результат hw4/run1/pairs_c2.csv
+logs\run1_c2.log:78:14:14:18.097 [c2] указатель: {"result": "hw4/run1/pairs_c2.csv", "by": "c2", "epoch": 2}, версия 1
+
+
+2026-10-31 14:14:59,928 [myid:zoo1:2181] - INFO  [main-SendThread(zoo1:2181):o.a.z.ClientCnxn$SendThread@1172] - SASL config status: Will not attempt to authenticate using SASL (unknown error)
+{"result": "hw4/run1/pairs_c1.csv", "by": "c1", "epoch": 1}
+dataVersion = 2
+

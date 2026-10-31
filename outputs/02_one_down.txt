@@ -1,0 +1,10 @@
+== zoo2, myid: 2
+
+Mode: follower
+== zoo3, myid: 3
+Mode: leader
+
+
+2026-10-31 14:10:11,836 [myid:zoo2:2181] - INFO  [main-SendThread(zoo2:2181):o.a.z.ClientCnxn$SendThread@1172] - SASL config status: Will not attempt to authenticate using SASL (unknown error)
+[zookeeper]
+

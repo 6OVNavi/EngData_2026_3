@@ -1,0 +1,16 @@
+
+logs\run2_c1.log:2:14:15:10.141 [c1] стал лидером, эпоха 1
+logs\run2_c1.log:106:14:16:54.274 [c1] расчёт готов: строк 229388, вакансий варианта 3704, разных пар 13049, всего вхождений 47503
+logs\run2_c1.log:107:14:16:54.536 [c1] запись отклонена: BadVersionError, моя эпоха 1 устарела
+logs\run2_c1.log:108:14:16:54.538 [c1] указатель: {"result": "hw4/run2/pairs_c2.csv", "by": "c2", "epoch": 2}, версия 1
+logs\run2_c2.log:2:14:15:35.774 [c2] стал лидером, эпоха 2
+logs\run2_c2.log:3:14:15:35.962 [c2] продолжаю с чекпоинта: байт 251659318, строк 68588, записал c1
+logs\run2_c2.log:76:14:16:16.878 [c2] расчёт готов: строк 229388, вакансий варианта 3704, разных пар 13049, всего вхождений 47503
+logs\run2_c2.log:77:14:16:17.263 [c2] записал результат hw4/run2/pairs_c2.csv
+logs\run2_c2.log:78:14:16:17.265 [c2] указатель: {"result": "hw4/run2/pairs_c2.csv", "by": "c2", "epoch": 2}, версия 1
+
+
+2026-10-31 14:16:55,880 [myid:zoo1:2181] - INFO  [main-SendThread(zoo1:2181):o.a.z.ClientCnxn$SendThread@1172] - SASL config status: Will not attempt to authenticate using SASL (unknown error)
+{"result": "hw4/run2/pairs_c2.csv", "by": "c2", "epoch": 2}
+dataVersion = 1
+
