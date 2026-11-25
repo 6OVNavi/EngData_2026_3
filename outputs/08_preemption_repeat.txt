@@ -1,0 +1,46 @@
+NAME            READY   STATUS    RESTARTS   AGE
+low-job-9lvgs   1/1     Running   0          0s
+NAME             READY   STATUS    RESTARTS   AGE
+high-job-6cblr   1/1     Running   0          33s
+low-job-szsdt    0/1     Pending   0          23s
+
+6m32s       Warning   FailedScheduling                    pod/rustfs-5f98d59456-f544c         0/1 nodes are available: pod has unbound immediate PersistentVolumeClaims. preemption: 0/1 nodes are available: 1 Preemption is not helpful for scheduling.
+4m4s        Warning   FailedScheduling                    pod/cpu-pending-zmvfb               0/1 nodes are available: 1 Insufficient cpu. preemption: 0/1 nodes are available: 1 No preemption victims found for incoming pod.
+3m51s       Normal    Pulling                             pod/low-job-jb2qk                   Pulling image "busybox:1.36"
+3m50s       Normal    Scheduled                           pod/low-job-jb2qk                   Successfully assigned default/low-job-jb2qk to docker-desktop
+3m50s       Normal    SuccessfulCreate                    job/low-job                         Created pod: low-job-jb2qk
+3m21s       Normal    Created                             pod/low-job-jb2qk                   Created container work
+3m21s       Normal    Pulled                              pod/low-job-jb2qk                   Successfully pulled image "busybox:1.36" in 32.419s (32.419s including waiting). Image size: 4417166 bytes.
+3m20s       Normal    Started                             pod/low-job-jb2qk                   Started container work
+3m19s       Normal    Preempted                           pod/low-job-jb2qk                   Preempted by pod 647d0454-6ead-44f4-9793-cab90948a708 on node docker-desktop
+3m19s       Warning   FailedScheduling                    pod/high-job-j4mjd                  0/1 nodes are available: 1 Insufficient cpu.
+3m19s       Normal    SuccessfulCreate                    job/high-job                        Created pod: high-job-j4mjd
+3m18s       Normal    Killing                             pod/low-job-jb2qk                   Stopping container work
+3m9s        Normal    SuccessfulCreate                    job/low-job                         Created pod: low-job-487bw
+2m49s       Normal    Scheduled                           pod/high-job-j4mjd                  Successfully assigned default/high-job-j4mjd to docker-desktop
+2m49s       Warning   FailedScheduling                    pod/low-job-487bw                   0/1 nodes are available: 1 Insufficient cpu. preemption: 0/1 nodes are available: 1 Insufficient cpu.
+2m48s       Normal    Pulled                              pod/high-job-j4mjd                  Container image "busybox:1.36" already present on machine
+2m48s       Normal    Created                             pod/high-job-j4mjd                  Created container work
+2m48s       Normal    Started                             pod/high-job-j4mjd                  Started container work
+90s         Warning   FailedScheduling                    pod/low-job-487bw                   skip schedule deleting pod: default/low-job-487bw
+90s         Normal    Killing                             pod/high-job-j4mjd                  Stopping container work
+34s         Normal    Created                             pod/low-job-9lvgs                   Created container work
+34s         Normal    Started                             pod/low-job-9lvgs                   Started container work
+33s         Normal    SuccessfulCreate                    job/high-job                        Created pod: high-job-6cblr
+33s         Normal    Scheduled                           pod/low-job-9lvgs                   Successfully assigned default/low-job-9lvgs to docker-desktop
+33s         Normal    Preempted                           pod/low-job-9lvgs                   Preempted by pod c5cb4a7e-94d0-43f7-9f81-d21e83e6a533 on node docker-desktop
+33s         Normal    SuccessfulCreate                    job/low-job                         Created pod: low-job-9lvgs
+33s         Warning   FailedScheduling                    pod/high-job-6cblr                  0/1 nodes are available: 1 Insufficient cpu.
+32s         Normal    Pulled                              pod/low-job-9lvgs                   Container image "busybox:1.36" already present on machine
+31s         Normal    Killing                             pod/low-job-9lvgs                   Stopping container work
+23s         Normal    SuccessfulCreate                    job/low-job                         Created pod: low-job-szsdt
+8s          Warning   FailedScheduling                    pod/high-job-6cblr                  0/1 nodes are available: 1 Insufficient cpu. preemption: not eligible due to a terminating pod on the nominated node.
+2s          Warning   FailedScheduling                    pod/low-job-szsdt                   0/1 nodes are available: 1 Insufficient cpu. preemption: 0/1 nodes are available: 1 Insufficient cpu.
+2s          Normal    Scheduled                           pod/high-job-6cblr                  Successfully assigned default/high-job-6cblr to docker-desktop
+2s          Normal    Pulled                              pod/high-job-6cblr                  Container image "busybox:1.36" already present on machine
+1s          Normal    Created                             pod/high-job-6cblr                  Created container work
+1s          Normal    Started                             pod/high-job-6cblr                  Started container work
+
+NAME             READY   STATUS      RESTARTS   AGE
+high-job-6cblr   0/1     Completed   0          2m
+low-job-szsdt    1/1     Running     0          110s

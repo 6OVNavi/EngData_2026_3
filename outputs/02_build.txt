@@ -1,0 +1,32 @@
+[1A[1B[0G[?25l[+] Building 0.0s (0/0)  docker:desktop-linux
+[?25h[1A[0G[?25l[+] Building 0.0s (0/0)  docker:desktop-linux
+[?25h[1A[0G[?25l[+] Building 0.0s (0/0)  docker:desktop-linux
+[?25h[1A[0G[?25l[+] Building 0.0s (0/1)                                    docker:desktop-linux
+[?25h[1A[0G[?25l[+] Building 0.1s (4/8)                                    docker:desktop-linux
+ => [internal] load build definition from Dockerfile                       0.0s
+ => => transferring dockerfile: 167B                                       0.0s
+ => [internal] load metadata for docker.io/library/python:3.12-slim        0.0s
+ => [internal] load .dockerignore                                          0.0s
+ => => transferring context: 2B                                            0.0s
+ => [1/4] FROM docker.io/library/python:3.12-slim                          0.0s
+ => [internal] load build context                                          0.0s
+ => => transferring context: 28B                                           0.0s
+[?25h[1A[1A[1A[1A[1A[1A[1A[1A[1A[0G[?25l[+] Building 0.2s (9/9) FINISHED                           docker:desktop-linux
+ => [internal] load build definition from Dockerfile                       0.0s
+ => => transferring dockerfile: 167B                                       0.0s
+ => [internal] load metadata for docker.io/library/python:3.12-slim        0.0s
+ => [internal] load .dockerignore                                          0.0s
+ => => transferring context: 2B                                            0.0s
+ => [1/4] FROM docker.io/library/python:3.12-slim                          0.0s
+ => [internal] load build context                                          0.0s
+ => => transferring context: 30B                                           0.0s
+ => CACHED [2/4] RUN pip install --no-cache-dir boto3                      0.0s
+ => CACHED [3/4] WORKDIR /app                                              0.0s
+ => CACHED [4/4] COPY pairs.py .                                           0.0s
+ => exporting to image                                                     0.0s
+ => => exporting layers                                                    0.0s
+ => => writing image sha256:df3387caa35dad758729d0704ca5dc4d19fe3a1148ce8  0.0s
+ => => naming to docker.io/library/hw5-pairs:1                             0.0s
+[?25h
+REPOSITORY   TAG       IMAGE ID       CREATED          SIZE
+hw5-pairs    1         df3387caa35d   21 minutes ago   154MB

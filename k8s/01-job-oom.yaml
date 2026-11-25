@@ -1,0 +1,24 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: pairs-oom
+spec:
+  backoffLimit: 0
+  template:
+    spec:
+      restartPolicy: Never
+      containers:
+        - name: pairs
+          image: hw5-pairs:1
+          imagePullPolicy: Never
+          args: ["full"]
+          env:
+            - name: S3_ENDPOINT
+              value: http://host.docker.internal:9000
+          resources:
+            requests:
+              cpu: 500m
+              memory: 64Mi
+            limits:
+              cpu: "1"
+              memory: 64Mi

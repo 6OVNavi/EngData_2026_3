@@ -1,0 +1,10 @@
+NAME                READY   STATUS      RESTARTS   AGE   IP          NODE             NOMINATED NODE   READINESS GATES
+pairs-map-0-p88jh   0/1     Completed   0          5s    10.1.0.15   docker-desktop   <none>           <none>
+pairs-map-1-6ml8h   0/1     Completed   0          5s    10.1.0.14   docker-desktop   <none>           <none>
+pairs-map-2-2rrwn   0/1     Completed   0          5s    10.1.0.12   docker-desktop   <none>           <none>
+pairs-map-3-h5klk   0/1     Completed   0          5s    10.1.0.13   docker-desktop   <none>           <none>
+NAME                READY   STATUS      RESTARTS   AGE
+pairs-map-0-p88jh   0/1     Completed   0          7s
+pairs-map-1-6ml8h   0/1     Completed   0          7s
+pairs-map-2-2rrwn   0/1     Completed   0          7s
+pairs-map-3-h5klk   0/1     Completed   0          7s

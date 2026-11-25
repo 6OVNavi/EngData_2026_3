@@ -1,0 +1,18 @@
+NAME              READY   STATUS    RESTARTS   AGE
+quota-job-2nrhm   1/1     Running   0          11s
+quota-job-g57vd   1/1     Running   0          11s
+Name:            hw5-quota
+Namespace:       hw5-quota
+Resource         Used   Hard
+--------         ----   ----
+limits.memory    512Mi  1Gi
+pods             2      2
+requests.cpu     200m   1
+requests.memory  256Mi  512Mi
+
+Pods Statuses:    2 Active (2 Ready) / 0 Succeeded / 0 Failed
+  Warning  FailedCreate      11s   job-controller  Error creating: pods "quota-job-xqgbz" is forbidden: exceeded quota: hw5-quota, requested: pods=1, used: pods=2, limited: pods=2
+  Warning  FailedCreate      10s   job-controller  Error creating: pods "quota-job-4wqw7" is forbidden: exceeded quota: hw5-quota, requested: pods=1, used: pods=2, limited: pods=2
+  Warning  FailedCreate      8s    job-controller  Error creating: pods "quota-job-7zkr7" is forbidden: exceeded quota: hw5-quota, requested: pods=1, used: pods=2, limited: pods=2
+  Warning  FailedCreate      7s    job-controller  Error creating: pods "quota-job-bm69q" is forbidden: exceeded quota: hw5-quota, requested: pods=1, used: pods=2, limited: pods=2
+

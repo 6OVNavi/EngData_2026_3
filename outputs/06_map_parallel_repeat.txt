@@ -1,0 +1,5 @@
+NAME                READY   STATUS    RESTARTS   AGE   IP          NODE             NOMINATED NODE   READINESS GATES
+pairs-map-0-jjkfg   1/1     Running   0          2s    10.1.0.23   docker-desktop   <none>           <none>
+pairs-map-1-dp86m   1/1     Running   0          2s    10.1.0.24   docker-desktop   <none>           <none>
+pairs-map-2-d9mnx   1/1     Running   0          2s    10.1.0.25   docker-desktop   <none>           <none>
+pairs-map-3-zrb27   1/1     Running   0          2s    10.1.0.22   docker-desktop   <none>           <none>

@@ -1,0 +1,11 @@
+NAME              READY   STATUS      RESTARTS   AGE
+pairs-oom-q76qc   0/1     OOMKilled   0          51s
+
+    State:          Terminated
+      Reason:       OOMKilled
+      Exit Code:    137
+    Limits:
+      memory:  64Mi
+      memory:  64Mi
+  Type    Reason     Age   From               Message
+

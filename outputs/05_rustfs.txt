@@ -1,0 +1,4 @@
+NAME                          READY   STATUS    RESTARTS   AGE
+pod/rustfs-5f98d59456-f544c   1/1     Running   0          118s
+NAME          STATUS   VOLUME                                     CAPACITY   ACCESS MODES   STORAGECLASS   VOLUMEATTRIBUTESCLASS   AGE
+rustfs-data   Bound    pvc-ae79e1b2-3193-4516-87d5-cf6fdb3effcb   5Gi        RWO            hostpath       <unset>                 118s

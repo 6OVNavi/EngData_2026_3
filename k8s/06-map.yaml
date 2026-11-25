@@ -1,0 +1,29 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: pairs-map
+spec:
+  completionMode: Indexed
+  completions: 4
+  parallelism: 4
+  backoffLimit: 2
+  template:
+    spec:
+      restartPolicy: Never
+      containers:
+        - name: pairs
+          image: hw5-pairs:1
+          imagePullPolicy: Never
+          args: ["map"]
+          env:
+            - name: S3_ENDPOINT
+              value: http://rustfs:9000
+            - name: PARTS
+              value: "4"
+          resources:
+            requests:
+              cpu: 500m
+              memory: 512Mi
+            limits:
+              cpu: "1"
+              memory: 512Mi

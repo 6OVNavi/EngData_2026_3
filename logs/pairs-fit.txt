@@ -1,0 +1,13 @@
+вакансий варианта: 3704, разных пар: 13049, всего вхождений: 47503
+топ-10 пар:
+     760  Android + Kotlin
+     538  Swift + iOS
+     503  Android SDK + Kotlin
+     484  Java + Kotlin
+     454  Android + Android SDK
+     410  Android + Java
+     368  Android + Git
+     330  Android SDK + Java
+     294  Git + Kotlin
+     280  Git + iOS
+пик памяти процесса: 137.8 МБ

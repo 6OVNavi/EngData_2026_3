@@ -1,0 +1,13 @@
+NAME                READY   STATUS    RESTARTS   AGE
+cpu-pending-zmvfb   0/1     Pending   0          11s
+
+Name:             cpu-pending-zmvfb
+                  batch.kubernetes.io/job-name=cpu-pending
+                  job-name=cpu-pending
+Status:           Pending
+Controlled By:    Job/cpu-pending
+    Requests:
+      cpu:        64
+  Type           Status
+  Warning  FailedScheduling  11s   default-scheduler  0/1 nodes are available: 1 Insufficient cpu. preemption: 0/1 nodes are available: 1 No preemption victims found for incoming pod.
+

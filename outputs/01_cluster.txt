@@ -1,0 +1,6 @@
+Client Version: v1.31.4
+Kustomize Version: v5.4.2
+Server Version: v1.31.4
+NAME             STATUS   ROLES           AGE   VERSION   INTERNAL-IP    EXTERNAL-IP   OS-IMAGE         KERNEL-VERSION                       CONTAINER-RUNTIME
+docker-desktop   Ready    control-plane   10m   v1.31.4   192.168.65.3   <none>        Docker Desktop   5.15.167.4-microsoft-standard-WSL2   docker://27.5.1
+{"cpu":"4","ephemeral-storage":"972991057538","hugepages-1Gi":"0","hugepages-2Mi":"0","memory":"8035188Ki","pods":"110"}

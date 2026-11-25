@@ -1,0 +1,31 @@
+allocatable cpu: 4, каждая задача просит 2400m
+NAME                      VALUE        GLOBAL-DEFAULT   AGE
+high-priority             1000000      false            0s
+low-priority              1000         false            0s
+system-cluster-critical   2000000000   false            17m
+system-node-critical      2000001000   false            17m
+NAME            READY   STATUS    RESTARTS   AGE
+low-job-jb2qk   1/1     Running   0          31s
+NAME             READY   STATUS        RESTARTS   AGE
+high-job-j4mjd   0/1     Pending       0          16s
+low-job-487bw    0/1     Pending       0          6s
+low-job-jb2qk    1/1     Terminating   0          47s
+
+3m29s       Warning   FailedScheduling                    pod/rustfs-5f98d59456-f544c         0/1 nodes are available: pod has unbound immediate PersistentVolumeClaims. preemption: 0/1 nodes are available: 1 Preemption is not helpful for scheduling.
+61s         Warning   FailedScheduling                    pod/cpu-pending-zmvfb               0/1 nodes are available: 1 Insufficient cpu. preemption: 0/1 nodes are available: 1 No preemption victims found for incoming pod.
+48s         Normal    Pulling                             pod/low-job-jb2qk                   Pulling image "busybox:1.36"
+47s         Normal    Scheduled                           pod/low-job-jb2qk                   Successfully assigned default/low-job-jb2qk to docker-desktop
+47s         Normal    SuccessfulCreate                    job/low-job                         Created pod: low-job-jb2qk
+18s         Normal    Created                             pod/low-job-jb2qk                   Created container work
+18s         Normal    Pulled                              pod/low-job-jb2qk                   Successfully pulled image "busybox:1.36" in 32.419s (32.419s including waiting). Image size: 4417166 bytes.
+17s         Normal    Started                             pod/low-job-jb2qk                   Started container work
+16s         Normal    Preempted                           pod/low-job-jb2qk                   Preempted by pod 647d0454-6ead-44f4-9793-cab90948a708 on node docker-desktop
+16s         Normal    SuccessfulCreate                    job/high-job                        Created pod: high-job-j4mjd
+16s         Warning   FailedScheduling                    pod/high-job-j4mjd                  0/1 nodes are available: 1 Insufficient cpu.
+15s         Normal    Killing                             pod/low-job-jb2qk                   Stopping container work
+6s          Warning   FailedScheduling                    pod/low-job-487bw                   0/1 nodes are available: 1 Insufficient cpu. preemption: 0/1 nodes are available: 1 Insufficient cpu.
+6s          Normal    SuccessfulCreate                    job/low-job                         Created pod: low-job-487bw
+
+NAME             READY   STATUS    RESTARTS   AGE
+high-job-j4mjd   1/1     Running   0          109s
+low-job-487bw    0/1     Pending   0          99s
